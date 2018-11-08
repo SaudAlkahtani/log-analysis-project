@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 import psycopg2
 
@@ -68,7 +69,11 @@ def getTopErrorDay(conn):
 
 
 if __name__ == '__main__':
-    conn = psycopg2.connect(database=DBNAME)
+    try:
+        conn = psycopg2.connect(database=DBNAME)
+    except:
+        print("Unable to connect to the database")
+
     getTopThreeArticles(conn)
     getMostPopularAuthor(conn)
     getTopErrorDay(conn)
