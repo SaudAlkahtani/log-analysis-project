@@ -1,33 +1,34 @@
 ## This project is presented for Udacity Full stack nano degree 
 ### This project is used to analyse a database/log  of a news website.
 #### The Queries that the code do is:
-    - What is the top 3 Viewed Articles?.
-    - Which authors has the most viewed Articles?
-    - Which day has more than 1% of errors in requesting the pages 
+- What is the top 3 Viewed Articles?.
+- Which authors has the most viewed Articles?
+- Which day has more than 1% of errors in requesting the pages 
 ### Content of the database
 #### The database has three tables
-    - Authors Table
-      - Includes these columns :
-        - name of the author.
-        - id of the author.
-        - his bio.
-    -  Articles Table
-      - Includes these columns:
-        - The id of the article's author.
-        - The article's title.
-        -  The article's slug which appears in the uri
-        - The lead of the article
-        - The body of the article
-        - The time it was posted
-        - The article's id 
-    - Log table
-        - The id of the request 
-        - The path of the request
-        - The ip which requested the article
-        - The method used to access it (get,post)
-        - The status of request(200 ok , 404 not found)
-        - Time of the request
-        - Id of the request
+- Authors Table
+  - Includes these columns :
+    - name of the author.
+    - id of the author.
+    - his bio.
+-  Articles Table
+   - Includes these columns:
+     - The id of the article's author.
+     - The article's title.
+     -  The article's slug which appears in the uri
+     - The lead of the article
+     - The body of the article
+     - The time it was posted
+     - The article's id 
+- Log table
+  - Includes these columns:
+    - The id of the request 
+    - The path of the request
+    - The ip which requested the article
+    - The method used to access it (get,post)
+    - The status of request(200 ok , 404 not found)
+    - Time of the request
+    - Id of the request
 ## Steps you need to run this code:
  - Install the required software:
    - a.Vagrant: https://www.vagrantup.com/downloads.html
